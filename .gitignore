@@ -1,6 +1,8 @@
 # Temporary files
 *~
 *.swp
+bin/*
+build/*
 
 # Compiled Object files
 *.slo

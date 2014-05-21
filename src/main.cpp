@@ -33,15 +33,19 @@
 #ifndef MAIN_CPP_
 #define MAIN_CPP_
 
-#include <QtGui>
 #include <QApplication>
+#include "MainWindow.h"
 
-using namespace std;
-
-// The main routine.
 int main(int argc, char *argv[])
 {
-    return 0;
+//#if QT_VERSION < QT_VERSION_CHECK(5, 0, 0)
+//  QApplication::setGraphicsSystem("raster");
+//#endif
+  QApplication a(argc, argv);
+  MainWindow w;
+  w.show();
+
+  return a.exec();
 }
 
 #endif /* MAIN_CPP_ */
